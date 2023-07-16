@@ -110,6 +110,15 @@
 
       var ContentPage = React.createClass({
         render: function(){
+
+          var industriesBackground = {
+            backgroundColor: "#fff8ed",
+          };
+
+          var careerBackground = {
+            backgroundColor: "#ffade1",
+          };
+
           return (
             <div>
               <div className="row">
@@ -134,7 +143,7 @@
                 </div>
               </div>
 
-              <div className="row">
+              <div className="row" style={industriesBackground}>
                 <div className="industriesArea">
                   <h2 className="text-center headline-text" id="industries">Industries</h2>
                   <p className="text-center industry-text">Unearthing potential solutions for the problems facing world's biggest industries. Scroll below to explore</p>
@@ -188,7 +197,7 @@
                   </div>
                 </div>
               </div>
-              <div className="row">
+              <div className="row" style={careerBackground}>
                 <div className="row">
                   <h2 className="text-center headline-text" id="careers">Careers</h2>
                   <p className="text-center p-3">Work with great talents universally and get the great experience of huxleyslife.</p>
