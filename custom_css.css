@@ -1,0 +1,162 @@
+/*global stylings*/
+:root {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+html {
+  /*assining each color to a variable*/
+  --brand-purple: #ac9eb9;
+}
+
+/*navigation menu*/
+.brand-name{
+  color: #c8b2cd;
+  text-decoration: None;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+a:hover{
+  color: #ac9eb9 !important;
+}
+
+.navbar ul li a:hover {
+  color: white !important;
+  background-color: #ac9eb9 !important;
+  padding: 1em;
+}
+
+.navbar {
+  font-family: Oswald, sans-serif;
+  color: #bf00e6;
+  background-color: #231825 !important;
+}
+
+.navbar button {
+  border: None;
+  border-radius: 0px;
+}
+
+.navbar button:hover{
+  color: white !important;
+  background-color: #ac9eb9 !important;
+}
+
+
+/* Hero Background Area Styling */
+.heroArea {
+  background-image: url("images/quater-world.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  align-items: center;
+  background-color: #000000A0;
+  background-blend-mode: darken;
+}
+
+
+/*CEO message Area*/
+.ceoMessageArea {
+  background: rgb(242,229,237);
+  background: radial-gradient(circle, rgba(242,229,237,1) 0%, rgba(172,158,185,1) 100%);
+  align-items: center;
+
+}
+
+.ceoMsgContainer{
+  padding: 2.5em;
+}
+
+.ceoMsg {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: purple;
+}
+
+
+/*About Company Area*/
+.headline-text{
+  color: black !important;
+  font-weight: bold;
+  padding: 1.3em;
+}
+.aboutCompany{
+  padding: 2.5em !important;
+  font-family; Helvetica;
+  color: grey;
+}
+
+/*Industries Area*/
+.industriesArea{
+  background-color: #ffffff;
+}
+.industry-text{
+  padding: 0 1.5em 0 1.5em !important;
+  color: grey;
+}
+.industryCards{
+  padding: 1.5em;
+}
+
+.industryCard{
+  margin: 1.5rem;
+  width: 18rem;
+  border: None !important;
+  border-radius: 0 !important; 
+  box-shadow:-2px 5px 35px 2px rgba(0,0,0,0.75);
+  -webkit-box-shadow: -2px 5px 35px 2px rgba(0,0,0,0.75);
+  -moz-box-shadow: -2px 5px 35px 2px rgba(0,0,0,0.75);
+}
+
+/*Careers Area*/
+.careerMsg{
+  padding: 2.5rem !important;
+  font-family: "Roboto Condensed", sans-serif;
+}
+.careerHeadline{
+  font-size: 24px;
+}
+.careerParagraph{
+  font-size: 18px;
+  text-align: center !important;
+  color: gray;
+}
+
+/*Investor Area*/
+.investorParagraph{
+  padding: 1.5em;
+  color: gray;  
+}
+
+/*Contact us Area*/
+.contactUs{
+  padding:1.5em;
+  
+}
+.logoImage{
+  height: 500px;
+  width: 500px;
+  padding: 5em !important;
+}
+
+.linkedInIcon{
+  color: blue;
+}
+
+/*Desktop and wide view points*/
+@media (min-width: 25em) {
+  .heroArea {
+    height: 100vh;
+  }
+  .verticalLine{
+    border-left: 5px solid black;
+    height: 200px;
+    padding: 2rem !important;
+  }
+}

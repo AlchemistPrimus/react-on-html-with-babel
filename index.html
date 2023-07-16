@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html>
+  <head lan="en">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>hsystems.com</title>
+    <link rel="stylesheet" href="./custom_css.css" type="text/css">
+    <script src="https://unpkg.com/react@15.3.2/dist/react.js"></script>
+    <script src="https://unpkg.com/react-dom@15.3.2/dist/react-dom.js"></script>
+    <script src='https://unpkg.com/react-router-dom@5.0.0/umd/react-router-dom.min.js'></script>
+    <script src='https://unpkg.com/babel-standalone@6.26.0/babel.js'></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Antonio:wght@700&family=Oswald:wght@358&family=Roboto&family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" defer="defer"></script>  
+    
+  </head>
+  <body>
+    <div id="container" className="container">
+    </div>
+
+    <script type="text/babel">
+      var destination = document.querySelector("#container")
+
+      var Header = React.createClass({
+        render: function(){
+          
+          var headerStyle = {
+            color: "#bf00e6",
+            fontFamily: "Georgia",
+            backgroundColor: "#301136",
+            textDecoration: "None",
+          };
+
+          return (
+            <div>
+              <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+                <div className="container-fluid">
+                  <a className="brand pull-left brand-name" href="#">Huxley's Systems</a>
+                  <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span className="navbar-toggler-icon"></span>
+                  </button>
+                  <div className="collapse navbar-collapse" id="navbarSupportContent">
+                    <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li className="nav-item"><a className="nav-link" href="#about">About Company</a></li>
+                      <li className="nav-item"><a className="nav-link" href="#industries">Industries</a></li>
+                      <li className="nav-item"><a className="nav-link" href="#careers">Careers</a></li>
+                      <li className="nav-item"><a className="nav-link" href="#investors">Investor Relations</a></li>
+                      <li className="nav-item"><a className="nav-link" href="#contact">Contact Us</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+            </div>
+          );
+        }
+      });
+
+      var Hero = React.createClass({
+        render: function(){
+
+          var heroStyling = {
+            paddingTop: 35,
+            paddingBottom: 35,
+            paddingRight: 25,
+            paddingLeft: 25,
+          };
+          
+          var headerStyling = {
+            color: "#ffffff",
+            fontSize: 48,
+            fontWeight: "bold",
+          };
+
+          var bodyStyling = {
+            color: "#ffffff",
+            fontSize: 20,
+            fontWeight: "medium",
+          };
+
+          return(
+            <div className="col-md-6" style={heroStyling}>
+              <div style={heroStyling}>
+                <h2 style={headerStyling}>Let's hack into the future with software.</h2>
+                <p style={bodyStyling}>Huxley's Systems Ltd is a software company committed towards building 
+                technologies that helps us hack through our daily lives 
+                in a revolutionary way with bleeding edge technologies.</p>
+              </div>
+            </div>
+          );
+        }
+      });
+
+      var CeoMessage = React.createClass({
+        render: function(){
+
+          return (
+            <div className="container-fluid">
+              <div className="ceoMsgContainer">
+                <p className="text-center"><span className="ceoMsg">"Welcome to those moments that we influence the future!"</span></p>
+                <p className="text-center"><small><i>Huxley Adonijah, Founder &amp; CEO</i></small></p>
+              </div>
+            </div>
+          );
+        }
+      });
+
+      var ContentPage = React.createClass({
+        render: function(){
+          return (
+            <div>
+              <div className="row">
+                <div className="aboutCompany">
+                  <h2 className="text-center headline-text" id="about">About Company</h2>
+                  <p className="text-center">Huxley's Systems Ltd is amongst technology companies at the forefront, spearheading the next era of digital revolution in the world 
+                  by developing innovative products that makes life simpler.</p>
+
+                  <p className="text-center">Huxley's Systems Ltd was founded in 2020 as Linkupwiki and is based in Nairobi, Kenya at the heart of Africa's Silicon Savannah. 
+                  Huxley's Systems Ltd's guiding principle is to use innovation to hack life. Our healthcare paltform saves millions of lives via making 
+                  medication easily accessible, and reducing medication wastage via connecting healthcare facilities together.</p>
+
+                  <p className="text-center">Huxley's Systems Ltd also builds a high tech simulation and synthetic data software that finds its application heavily in; 
+                  aerospace engineering &amp; defence, Internet of Things and educational purpose in those respective fields, reducing production costs 
+                  in those fields and accelerate major movements such as fight against climate change using Geospatial and remote sensing technologies.</p>
+
+                  <p className="text-center">Huxley's Systems Ltd aims to offer a wide variety of services in FinTech and state of the art recommandation systems 
+                  for online purchases in its movement to transform humanity's daily routines.</p>
+
+                  <p className="text-center">Huxley's Systems Ltd is a private limited company, founded by Huxley Adonijah, an innovator and a software engineer with 
+                  a niche in artificial intelligence.</p>
+                </div>
+              </div>
+
+              <div className="row">
+                <div className="industriesArea">
+                  <h2 className="text-center headline-text" id="industries">Industries</h2>
+                  <p className="text-center industry-text">Unearthing potential solutions for the problems facing world's biggest industries.</p>
+
+                  <div className="row d-flex flex-row flex-nowrap overflow-auto align-items-stretch industryCards">
+
+                    <div className="col cardPadding align-self-stretch">
+                      <div className="card industryCard">
+                        <img className="card-img-top" src="images/healthcare.jpg" alt="healthcare image"/>
+                        <div className="card-body">
+                          <h5 className="card-title">Healthcare</h5>
+                          <hr/>
+                          <h6 className="card-subtitle mb-2 text-muted">Connect, network, share and automate!</h6>
+                          <p className="card-text">Increase accessibility of medication, reduce hospital wastes and operational costs when handling medication.
+                          Explore Linkuppharma to unlock new ways of managing medication effectively.</p>
+                          <a className="btn btn-primary" href="#">Explore</a>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div className="col cardPadding align-self-stretch">
+                      <div className="card industryCard">
+                        <img className="card-img-top" src="images/engineering.jpg" alt="engineering image"/>
+                        <div className="card-body">
+                          <h5 className="card-title">Engineering and Manufacturing</h5>
+                          <hr/>
+                          <h6 className="card-subtitle mb-2 text-muted">Get high tech engineering onboard!</h6>
+                          <p className="card-text">Test, troubleshoot and simulate systems with virtual models that accurately reflect existing physical objects 
+                          in engineering processes customized to your setting with Digital Reality 
+                          Simulations.</p>
+                          <a className="btn btn-primary" href="#">Explore</a>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div className="col cardPadding align-self-stretch">
+                      <div className="card industryCard">
+                        <img className="card-img-top" src="images/fintech.jpg" alt="fintech image" />
+                        <div className="card-body">
+                          <h5 className="card-title">Fintech</h5>
+                          <hr/>
+                          <h6 className="card-subtitle mb-2 text-muted">Be a quant by leveraging machines!</h6>
+                          <p className="card-text">Manage risk and spot opportunities in the crypto trading effortlessly with powerful trading tools. 
+                          Trade with advanced machine learning algorithms at your finger tips for a 
+                          good return on investment.</p>
+                          <a className="btn btn-primary" href="#">Explore</a>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+              <div className="row">
+                <div className="row">
+                  <h2 className="text-center headline-text" id="careers">Careers</h2>
+                  <p className="text-center p-3">Work with great talents universally and get the great experience of huxleyslife.</p>
+                </div>
+
+                <div className="row careerMsg">
+                  <div className="col-md-3">
+                    <div className="d-flex flex-nowrap">
+                      <h5 className="align-self-center careerHeadline">Interns &amp; Early professionals.</h5>
+                      <div className="verticalLine align-self-center"></div>
+                    </div>
+                  </div>
+                  <div className="col-md-9">
+                    <p className="align-self-center"><span className="careerParagraph"><i>Launch your career with great experiences. Interns and early professionals get to feel how 
+                    working with real world projects feels like, as they establish a strong network of support for proffessional development.</i></span></p>
+                  </div>
+                </div>
+
+                <div className="row careerMsg ">
+                  <div className="col-md-9">
+                    <p className="align-self-center"><span className="careerParagraph"><i>Get the opportunity to work with great innovators accross the globe and become part of 
+                    the task force propelling engineering and innovation to the next level.</i></span></p>
+                  </div>
+                  <div className="col-md-3">
+                    <div className="d-flex flex-nowrap">
+                      <div className="verticalLine align-self-center"></div>
+                      <h5 className="align-self-center careerHeadline">Work with the best people in technology, innovation and business.</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <div className="row">
+                <img src="images/huxleys-systems-image.png" className="col-md-6" alt="Huxley's systems ltd image"/>
+                <div className="col-md-6">
+                  <h3 className="headline-text" id="investors">Investor Relations</h3>
+                  <div className="investorParagraph">
+                    <p>Huxley's Systems Ltd is a technology company delivering various products such as healthcare platform, 
+                    simulation and synthetic data platform and high-end tools for trading cryptocurrencies. Huxley's Sytems Ltd is ahead of its time 
+                    in solving the world's toughest problems with powerful tools such as artificial intelligence and blockchian networks.</p>
+                    <p>Huxley's Systems Ltd is a private limited company. for more investor information email us at <a href="mailto: adonijahhuxley@gmail.com">Send Email</a></p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="row contactUs">
+               {/*
+               <div className="col-md-6">
+                  <h2 className="headline-text" id="contacts">Contact Us</h2>
+                </div>
+                */}
+                <img src="images/logo.png" className="img-fluid logoImage" alt="Huxley's Systems ltd logo" />
+                {/*
+                <a href="#">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="150" height="150" fill="blue" className="bi bi-linkedin" viewBox="0 0 16 16">
+                    <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+                  </svg>
+                </a>
+                */}
+              </div>
+            </div>
+          );
+        }
+      });
+
+      var Footer = React.createClass({
+        render: function(){
+          return (
+            <div>
+              <p className="text-center">Huxley's Systems Ltd&trade; &copy;2023</p>
+            </div>
+          );
+        }
+      });
+
+      var MainPage = React.createClass({
+        render: function(){
+
+          var bodyStyling = {
+            fontFamily: "Arial",
+          };
+
+          return (
+            <div style={bodyStyling}>
+              <div className="row">
+                <Header/>
+              </div>
+              <div className="row heroArea">
+                <Hero/>
+                <div className="col-md-6">
+                </div>
+              </div>
+
+              <div className="row ceoMessageArea">
+                <CeoMessage/>
+              </div>
+
+              <div className="row">
+                <ContentPage/>
+              </div>
+
+              <div className="row">
+                <Footer/>
+              </div>
+            </div>
+          );
+        }
+      });
+
+      ReactDOM.render(
+        <div>
+          <MainPage/>
+        </div>,
+        destination
+      );
+    </script>
+  </body>
+</html>
